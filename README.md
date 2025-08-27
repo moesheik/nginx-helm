@@ -1,5 +1,5 @@
 # Monitor argocd gitops with a lightweight standalone prometheus 
-1) Create a application in argo pointing to the git repo and the namespace (kubernetes on docker-desktop) 
+1) Create a application in argo pointing to the git repo and the namespace (kubernetes enabled in docker-desktop) 
    Argo CD syncs your Helm chart, Nginx deployed
    Argo CD exposes metrics via a dedicated service (argocd-metrics, argocd-repo-server-metrics, etc.)
 2) Configure Prometheus to Scrape Argo CD Metrics.
